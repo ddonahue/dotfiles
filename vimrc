@@ -52,6 +52,9 @@ set wildignore+=.git " Ignore .git directory in completion
 " when the page starts to scroll, keep the cursor n lines from the top/bottom
 set scrolloff=3
 
+" Keep swap files in one location
+set directory=$HOME/.vim/tmp
+
 " --------------- KEY MAPPINGS -------------------
 
 "none at the moment

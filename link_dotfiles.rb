@@ -5,6 +5,7 @@
 home = File.expand_path('~')
 
 Dir['*'].each do |file|
+  next if ['link_dotfiles.rb', 'README'].include?(file)
   target = File.join(home, ".#{file}")
   `ln -s #{File.expand_path file} #{target}`
 end
