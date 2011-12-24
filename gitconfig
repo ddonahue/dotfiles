@@ -1,0 +1,9 @@
+[user]
+	name = Dan Donahue
+	email = ddonahue215@gmail.com
+[core]
+	editor = mate -wl1
+	autocrlf = input
+	safecrlf = true
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
