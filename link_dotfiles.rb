@@ -3,9 +3,9 @@
 # from http://errtheblog.com/posts/89-huba-huba
 
 home = File.expand_path('~')
+dot_files = ['bash_profile','bashrc','bash','vimrc','gitconfig']
 
-Dir['*'].each do |file|
-  next if ['link_dotfiles.rb', 'README'].include?(file)
+dot_files.each do |file|
   target = File.join(home, ".#{file}")
   `ln -s #{File.expand_path file} #{target}`
 end
