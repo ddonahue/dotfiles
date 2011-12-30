@@ -1,0 +1,13 @@
+# ENVIRONMENT VARIABLES
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# add .bash directory, if it exists
+test -d "$HOME/.bash" &&
+PATH="$HOME/.bash:$PATH"
+
+#This loads RVM into a shell session.
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# add git completion
+source ~/.git-completion.bash
+
