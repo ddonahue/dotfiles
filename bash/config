@@ -40,7 +40,7 @@ BWHITE='\e[47m'
 
 # CONFIG
 print_before_the_prompt() {
-  printf "\n%s: $CYAN%s $YELLOW%s\n$NO_COLOR" "$USER" "$PWD" "$(vcprompt)"
+  printf "\n%s: $CYAN%s $YELLOW%s\n$NO_COLOR" "$USER" "${PWD/#$HOME/~}" "$(vcprompt)"
 }
 
 PROMPT_COMMAND=print_before_the_prompt
