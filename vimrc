@@ -15,11 +15,17 @@ Bundle 'gmarik/vundle'
 " add Bundles here:
 " github repos
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/nerdtree'
+Bundle 'wincent/Command-T.git'
+Bundle 'ervandew/supertab.git'
 
 "vim-scripts repos
 " Bundle 'L9'
 
 filetype plugin indent on
+
+" Set leader
+let mapleader=":"
 
 " Show line numbers
 set number
@@ -57,8 +63,12 @@ set directory=$HOME/.vim/tmp
 
 " --------------- KEY MAPPINGS -------------------
 
-"none at the moment
+" NERDTree configuration
+map <Leader>n :NERDTreeToggle<CR> 
 
+"Command-T configuration
+let g:CommandTMaxHeight=20
+nnoremap <silent> <Leader>bt :CommandTBuffer<CR>
 
 " --------------- COLOR SCHEME -------------------
 
