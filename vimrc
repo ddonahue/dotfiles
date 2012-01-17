@@ -18,9 +18,10 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'wincent/Command-T.git'
 Bundle 'ervandew/supertab.git'
-
+Bundle 'Lokaltog/vim-powerline'
 "vim-scripts repos
 " Bundle 'L9'
+Bundle 'bufexplorer.zip'
 
 filetype plugin indent on
 
@@ -45,6 +46,17 @@ set showcmd
 " Show the current mode
 set showmode
 
+" Set tab size
+set tabstop=4 
+" Set how many columns text gets indented with indent operations
+set shiftwidth=4
+" Don't autoconvert tabs into spaces
+set noexpandtab
+" Set automatic indenting
+set autoindent
+
+set laststatus=2
+
 " set the search scan so that it ignores case when the search is all lower
 " case but recognizes uppercase if it's specified
 set ignorecase
@@ -64,7 +76,7 @@ set directory=$HOME/.vim/tmp
 " --------------- KEY MAPPINGS -------------------
 
 " NERDTree configuration
-map <Leader>n :NERDTreeToggle<CR> 
+map <Leader>n<CR> :NERDTreeToggle<CR> 
 
 "Command-T configuration
 let g:CommandTMaxHeight=20
