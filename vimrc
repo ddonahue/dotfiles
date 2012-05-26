@@ -19,6 +19,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'wincent/Command-T.git'
 Bundle 'ervandew/supertab.git'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
 "vim-scripts repos
 " Bundle 'L9'
 Bundle 'bufexplorer.zip'
@@ -81,6 +82,9 @@ map <Leader>n<CR> :NERDTreeToggle<CR>
 "Command-T configuration
 let g:CommandTMaxHeight=20
 nnoremap <silent> <Leader>bt :CommandTBuffer<CR>
+
+" vim-numbertoggle configuation
+let g:NumberToggleTrigger="<F2>"
 
 " --------------- COLOR SCHEME -------------------
 
