@@ -86,6 +86,11 @@ nnoremap <silent> <Leader>bt :CommandTBuffer<CR>
 " vim-numbertoggle configuation
 let g:NumberToggleTrigger="<F2>"
 
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
+map <C-l> <C-w><Right>
+map <C-h> <C-w><Left>
+
 " --------------- COLOR SCHEME -------------------
 
 set t_Co=256
