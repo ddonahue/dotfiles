@@ -20,6 +20,8 @@ Bundle 'wincent/Command-T.git'
 Bundle 'ervandew/supertab.git'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
+Bundle 'fholgado/minibufexpl.vim'
+
 "vim-scripts repos
 " Bundle 'L9'
 Bundle 'bufexplorer.zip'
@@ -82,6 +84,7 @@ map <Leader>n<CR> :NERDTreeToggle<CR>
 "Command-T configuration
 let g:CommandTMaxHeight=20
 nnoremap <silent> <Leader>bt :CommandTBuffer<CR>
+nnoremap <CR> :noh<CR><CR> 
 
 " vim-numbertoggle configuation
 let g:NumberToggleTrigger="<F2>"
@@ -101,3 +104,35 @@ set background=dark
 let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
 colorscheme solarized 	" Set color scheme to solarized dark
+
+" --------------- FILE TYPE SETTINGS -------------------
+
+" Ruby
+au BufNewFile,BufRead *.rb,*.rbw,*.gem,*.gemspec set filetype=ruby
+
+" Rakefile
+au BufNewFile,BufRead [rR]akefile,*.rake set filetype=ruby
+
+" IRB config
+au BufNewFile,BufRead .irbrc,irbrc set filetype=ruby
+
+" Rackup
+au BufNewFile,BufRead *.ru set filetype=ruby
+
+" Capistrano
+au BufNewFile,BufRead Capfile set filetype=ruby
+
+" Bundler
+au BufNewFile,BufRead Gemfile set filetype=ruby
+
+" Autotest
+au BufNewFile,BufRead .autotest set filetype=ruby
+
+" eRuby
+au BufNewFile,BufRead *.erb,*.rhtml set filetype=eruby
+
+" File type tab settings
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab softtabstop=2
+autocmd FileType eruby setlocal tabstop=4 shiftwidth=4
+
+
