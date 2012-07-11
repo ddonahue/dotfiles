@@ -3,7 +3,7 @@
 # from http://errtheblog.com/posts/89-huba-huba
 
 home = File.expand_path('~')
-dot_files = ['bash_profile','bashrc','bash', 'gvimrc', 'vimrc','gitconfig','git-completion.bash']
+dot_files = ['bash_profile','bashrc','bash', 'gvimrc', 'vimrc','gitconfig','git-completion.bash', 'zshrc', 'zsh']
 
 dot_files.each do |file|
   target = File.join(home, ".#{file}")
