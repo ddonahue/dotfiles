@@ -16,7 +16,7 @@ GIT_PROMPT_INFO='$(git_prompt_info)'
 GIT_PROMPT_STATUS='$(git_prompt_status)'
 
 function prompt_char {
-echo '$ '
+echo '⚒ '
 }
 
 PROMPT="
