@@ -16,14 +16,31 @@ GIT_PROMPT_INFO='$(git_prompt_info)'
 GIT_PROMPT_STATUS='$(git_prompt_status)'
 
 function prompt_char {
-echo '⚒ '
+  echo '⚒ '
 }
+
+function current_ruby() {
+  echo "$(rbenv version-name)"
+}
+
+function current_gemset() {
+  echo "$(rbenv gemset active 2&>/dev/null | sed -e ":a" -e '$ s/\n/+/gp;N;b a' | head -n1)"
+}
+
+function rbenv_prompt_info() {
+  if [[ -n $(current_gemset) ]] ; then
+	echo "$(current_ruby)@$(current_gemset)"
+  else
+	echo "$(current_ruby)"
+  fi
+}
+
 
 PROMPT="
 ${PROMPT_STYLE}${PROMPT_BRACKET_BEGIN}${PROMPT_DIR}${PROMPT_BRACKET_END}%{$reset_color%}
 $(prompt_char)"
 #$(virtualenv_info)$(prompt_char)%{$reset_color%} "
-RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}${rbenv_prompt_info}"
+RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}"
 #
 # Git repository
 #
