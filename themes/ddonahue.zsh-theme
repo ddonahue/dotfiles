@@ -23,7 +23,7 @@ PROMPT="
 ${PROMPT_STYLE}${PROMPT_BRACKET_BEGIN}${PROMPT_DIR}${PROMPT_BRACKET_END}%{$reset_color%}
 $(prompt_char)"
 #$(virtualenv_info)$(prompt_char)%{$reset_color%} "
-RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}"
+RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}${rbenv_prompt_info}"
 #
 # Git repository
 #
