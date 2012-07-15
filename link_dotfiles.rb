@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-# from http://errtheblog.com/posts/89-huba-huba
 dotfiles_dir = File.dirname(__FILE__)
 home_dir = File.expand_path('~')
 
@@ -17,6 +16,12 @@ dotfiles.each do |file|
   `ln -s #{source} #{target}`
 end
 
-# git push on commit
-#`echo 'git push' > .git/hooks/post-commit`
-#`chmod 755 .git/hooks/post-commit`
+# special case for my custom oh-my-zsh theme
+zsh_theme_filename = 'ddonahue.zsh-theme'
+zsh_theme_file = File.expand_path(File.join(dotfiles_dir, 'themes', zsh_theme_filename))
+oh_my_zsh_custom_folder = File.expand_path(File.join(home_dir, '.oh-my-zsh', 'custom'))
+
+if (File.exist?(oh_my_zsh_custom_folder))
+
+  `ln -s #{zsh_theme_file} #{File.join(oh_my_zsh_custom_folder, zsh_theme_filename)}`
+end
