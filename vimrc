@@ -29,7 +29,7 @@ Bundle 'bufexplorer.zip'
 filetype plugin indent on
 
 " Set leader
-let mapleader=":"
+let mapleader=";"
 
 " Show line numbers
 set number
