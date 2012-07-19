@@ -16,7 +16,7 @@ Bundle 'gmarik/vundle'
 " github repos
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
-Bundle 'wincent/Command-T.git'
+Bundle 'kien/ctrlp.vim.git'
 Bundle 'ervandew/supertab.git'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
@@ -83,7 +83,8 @@ map <Leader>n<CR> :NERDTreeToggle<CR>
 
 "Command-T configuration
 let g:CommandTMaxHeight=20
-nnoremap <silent> <Leader>bt :CommandTBuffer<CR>
+nnoremap <silent> <Leader>t :CtrlP<CR>
+nnoremap <silent> <Leader>bt :CtrlPBuffer<CR>
 nnoremap <CR> :noh<CR><CR> 
 
 " vim-numbertoggle configuation
