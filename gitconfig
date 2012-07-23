@@ -2,7 +2,7 @@
 	name = Dan Donahue
 	email = ddonahue215@gmail.com
 [core]
-	editor = mvim -f
+	editor = vim
 	autocrlf = input
 	safecrlf = true
 [alias]
