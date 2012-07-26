@@ -132,6 +132,10 @@ au BufNewFile,BufRead .autotest set filetype=ruby
 " eRuby
 au BufNewFile,BufRead *.erb,*.rhtml set filetype=eruby
 
+" Javascript
+au BufNewFile,BufRead *.js set filetype=javascript
+
 " File type tab settings
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab softtabstop=2
 autocmd FileType eruby setlocal tabstop=4 shiftwidth=4
+autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
