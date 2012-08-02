@@ -92,7 +92,7 @@ RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}"
 #
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[green]%}%{$_reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} ⚡%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} ☣%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[red]%} ♥%{$reset_color%}"
 
 
