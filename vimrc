@@ -20,6 +20,8 @@ Bundle 'kien/ctrlp.vim.git'
 Bundle 'ervandew/supertab.git'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'mileszs/ack.vim.git'
 " Bundle 'fholgado/minibufexpl.vim' -- TEMPORARY COMMENTING THIS OUT - GOING TO
 "TRY TO USE CTRL-P'S BUFFER SEARCH INSTEAD
 
@@ -95,6 +97,10 @@ map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
+
+" disable up and down keys - force yourself to love the home row!
+noremap <up> <nop>
+noremap <down> <nop>
 
 " let g:miniBufExplMapWindowNavVim = 1
 
