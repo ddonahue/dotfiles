@@ -22,6 +22,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
 Bundle 'scrooloose/nerdcommenter.git'
 Bundle 'mileszs/ack.vim.git'
+Bundle 'koron/nyancat-vim.git'
 " Bundle 'fholgado/minibufexpl.vim' -- TEMPORARY COMMENTING THIS OUT - GOING TO
 "TRY TO USE CTRL-P'S BUFFER SEARCH INSTEAD
 
