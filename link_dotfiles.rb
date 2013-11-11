@@ -13,6 +13,7 @@ dotfiles.each do |file|
     File.delete(target)
   end
 
+  "Linking #{target}"
   `ln -s #{source} #{target}`
 end
 
@@ -22,6 +23,8 @@ zsh_theme_file = File.expand_path(File.join(dotfiles_dir, 'themes', zsh_theme_fi
 oh_my_zsh_custom_folder = File.expand_path(File.join(home_dir, '.oh-my-zsh', 'custom'))
 
 if (File.exist?(oh_my_zsh_custom_folder))
-
+  puts "Linking custom oh-my-zsh theme."
   `ln -s #{zsh_theme_file} #{File.join(oh_my_zsh_custom_folder, zsh_theme_filename)}`
+else
+  puts "Could not link to custom oh-my-zsh theme. Please create #{oh_my_zsh_custom_folder}"
 end
