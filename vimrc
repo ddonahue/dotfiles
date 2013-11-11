@@ -147,3 +147,4 @@ au BufNewFile,BufRead *.js set filetype=javascript
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab softtabstop=2
 autocmd FileType eruby setlocal tabstop=4 shiftwidth=4
 autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+autocmd FileType html  setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab

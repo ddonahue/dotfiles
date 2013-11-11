@@ -7,7 +7,12 @@
 	safecrlf = true
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	st = status
+	ci = commit
+	co = checkout
 [merge]
 	tool = opendiff
 [branch]
 	autosetuprebase = always
+[push]
+	default = simple

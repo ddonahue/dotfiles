@@ -1,5 +1,5 @@
 # ENVIRONMENT VARIABLES
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/share/npm/bin"
 
 # add .bash directory, if it exists
 test -d "$HOME/.zsh" &&
