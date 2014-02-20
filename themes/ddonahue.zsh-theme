@@ -7,7 +7,7 @@ PROMPT_STYLE="%(?:%{$fg[green]%}❤ :%{$fg[red]%}❤ %s)"
 PROMPT_BRACKET_BEGIN='%{$fg[white]%}['
 PROMPT_USER='%{$fg[blue]%}%n'
 PROMPT_AT="%{$reset_color%}@"
-PROMPT_HOST='%{$fg[red]%}%m'
+PROMPT_HOST='%{$fg[blue]%}%m'
 PROMPT_SEPARATOR='%{$reset_color%}:'
 PROMPT_DIR='%{$fg[blue]%}%~'
 PROMPT_BRACKET_END='%{$fg[white]%}]'
@@ -83,7 +83,7 @@ function git_time_since_commit() {
 
 
 PROMPT="
-${PROMPT_STYLE}${PROMPT_BRACKET_BEGIN}${PROMPT_DIR}${PROMPT_BRACKET_END}%{$reset_color%}
+${PROMPT_STYLE}${PROMPT_BRACKET_BEGIN}${PROMPT_HOST}: ${PROMPT_DIR}${PROMPT_BRACKET_END}%{$reset_color%}
 $(prompt_char)"
 #$(virtualenv_info)$(prompt_char)%{$reset_color%} "
 RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}"
