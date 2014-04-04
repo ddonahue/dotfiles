@@ -3,7 +3,7 @@
 	email = ddonahue215@gmail.com
 [core]
 	editor = vim
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
