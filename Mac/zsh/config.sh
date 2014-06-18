@@ -1,2 +1,4 @@
-# Un-comment below to turn on vi-mode in zsh 
-#bindkey -v
+# use vi key bindings on the command-line
+bindkey -v
+# preserve "command-line history search key: ctrl+R"
+bindkey '^R' history-incremental-search-backward
