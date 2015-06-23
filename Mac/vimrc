@@ -6,30 +6,31 @@ filetype off
 
 " this requires Vundler is installed - git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 " load vim bundles using vundle
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-" add Bundles here:
+" add Plugins here:
 " github repos
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim.git'
-Bundle 'ervandew/supertab.git'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'mileszs/ack.vim.git'
-Bundle 'koron/nyancat-vim.git'
-" Bundle 'fholgado/minibufexpl.vim' -- TEMPORARY COMMENTING THIS OUT - GOING TO
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim.git'
+Plugin 'ervandew/supertab.git'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle.git'
+Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'mileszs/ack.vim.git'
+Plugin 'koron/nyancat-vim.git'
+" Plugin 'fholgado/minibufexpl.vim' -- TEMPORARY COMMENTING THIS OUT - GOING TO
 "TRY TO USE CTRL-P'S BUFFER SEARCH INSTEAD
 
 "vim-scripts repos
-" Bundle 'L9'
-" Bundle 'bufexplorer.zip'
+" Plugin 'L9'
+" Plugin 'bufexplorer.zip'
 
+call vundle#end()
 filetype plugin indent on
 
 " Set leader
@@ -79,6 +80,7 @@ set scrolloff=3
 
 " Keep swap files in one location
 set directory=$HOME/.vim/tmp
+set noswapfile
 
 " --------------- KEY MAPPINGS -------------------
 
