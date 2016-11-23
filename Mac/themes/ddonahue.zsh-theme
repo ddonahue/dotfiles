@@ -84,7 +84,7 @@ function git_time_since_commit() {
 
 PROMPT="
 ${PROMPT_STYLE}${PROMPT_BRACKET_BEGIN}${PROMPT_HOST}: ${PROMPT_DIR}${PROMPT_BRACKET_END}%{$reset_color%}
-$(prompt_char)"
+$(prompt_char) "
 #$(virtualenv_info)$(prompt_char)%{$reset_color%} "
 RPROMPT="${GIT_PROMPT_INFO}${GIT_PROMPT_STATUS}"
 #
@@ -102,5 +102,3 @@ ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}✖"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%}➜"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%}═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[white]%}✭"
-
-
