@@ -4,35 +4,20 @@
 set nocompatible
 filetype off
 
-" this requires Vundler is installed - git clone http://github.com/gmarik/vundle.git ~/vim/bundle/vundle
-" load vim bundles using vundle
-
-set rtp+=~/vimfiles/bundle/vundle
-let path='~/vimfiles/bundle'
-call vundle#rc(path)
-
-" let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-
-" add Bundles here:
-" github repos
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim.git'
-Bundle 'ervandew/supertab.git'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle.git'
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'mileszs/ack.vim.git'
-Bundle 'koron/nyancat-vim.git'
+call plug#begin('~/vimfiles/bundle')
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'ervandew/supertab'
+Plug 'Lokaltog/vim-powerline'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'scrooloose/nerdcommenter'
+Plug 'mileszs/ack.vim'
+Plug 'koron/nyancat-vim'
 " Bundle 'fholgado/minibufexpl.vim' -- TEMPORARY COMMENTING THIS OUT - GOING TO
 "TRY TO USE CTRL-P'S BUFFER SEARCH INSTEAD
-
-"vim-scripts repos
-" Bundle 'L9'
-" Bundle 'bufexplorer.zip'
-
-filetype plugin indent on
+call plug#end()
+"filetype plugin indent on
 
 " Set leader
 let mapleader=";"
